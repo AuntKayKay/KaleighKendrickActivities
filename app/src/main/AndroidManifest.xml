@@ -19,8 +19,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.kaleigh.DisplayMessageActivity"
+            android:name=".DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.kaleigh.kaleighkendrickactivities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DisplaySecondMessage"
+            android:label="@string/title_activity_display_second_message"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

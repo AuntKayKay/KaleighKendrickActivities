@@ -10,25 +10,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".DisplayMessageActivity"
-    tools:showIn="@layout/activity_display_message"
+    tools:context=".DisplaySecondMessage"
+    tools:showIn="@layout/activity_display_second_message"
     android:id="@+id/content">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
-    <EditText android:id="@+id/second_message"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/second_message"
-        />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_next"
-        android:onClick="Next"
-    />
-    </LinearLayout>
 </LinearLayout>

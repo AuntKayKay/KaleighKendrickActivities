@@ -11,19 +11,21 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.widget.EditText;
 
-import com.example.kaleigh.DisplayMessageActivity;
-
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.example.kaleigh.kaleighkendrickactivities.MESSAGE";
 
+
     /**
-     * Called when user clicks the Send Button
+     * Called when user clicks the Send Button.
      */
     public void sendMessage(View view) {
+        //Declares intent for the MainActivity class.
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
+        //Stores the message.
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
+        //Sends message to the next activity (DisplayMessageActivity).
         startActivity(intent);
     }
 
